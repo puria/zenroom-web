@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<script type="module">
+      import { zencode_exec } from 'https://jspm.dev/zenroom';
+
+			const contract = `Scenario 'ecdh': Create the key
+Given nothing
+When I create the ecdh key
+Then print the 'keyring'`
+
+      zencode_exec(contract).then(console.log)
+		</script>
+	</body>
+</html>
